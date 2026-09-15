@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+	--font-primary: "Poppins", sans-serif;
+	--font-display: "Manrope", sans-serif;
+	--font-tech: "Orbitron", sans-serif;
+	--font-code: "JetBrains Mono", monospace;
+}
+
+html,
+body {
+	font-family: var(--font-primary);
+}
+
+button,
+input,
+textarea,
+select {
+	font-family: var(--font-primary);
+}
+
+header,
+.sidebar,
+.nav-bar,
+.nav-btns,
+.sidebar-btns {
+	font-family: var(--font-primary);
+}
+
+.home-title,
+.about-content h2,
+.repo-header h1,
+.contact-heading h2 {
+	font-family: var(--font-display);
+	font-weight: 800;
+	letter-spacing: -0.035em;
+}
+
+.home-badge,
+.home-social,
+.about-label,
+.contact-label,
+.repo-label,
+.eyebrow {
+	font-family: var(--font-tech);
+	font-weight: 600;
+	letter-spacing: 0.08em;
+}
+
+.home-description,
+.about-description,
+.contact-heading p,
+.repo-header p {
+	font-family: var(--font-primary);
+	font-weight: 400;
+}
+
+.about-typing,
+.typing-cursor {
+	font-family: var(--font-code);
+}
+
+.skills-grid,
+.skill-item {
+	font-family: var(--font-primary);
+}
+
+.repository-card,
+.repository-name,
+.repository-description,
+.repository-topic,
+.repository-stat,
+.repository-date,
+.repository-language {
+	font-family: var(--font-primary);
+}
+
+.repository-name {
+	font-weight: 700;
+}
+
+.repository-topic,
+.repository-stat,
+.repository-date,
+.repository-language {
+	font-weight: 500;
+}
+
+.repository-date strong {
+	font-weight: 700;
+}
+
+.contact-form input,
+.contact-form textarea {
+	font-family: var(--font-primary);
+	font-weight: 400;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+	font-family: var(--font-primary);
+}
+
+.contact-send {
+	font-family: var(--font-primary);
+	font-weight: 600;
+}
+
+#theme-btn {
+	font-family: var(--font-primary);
+	font-weight: 600;
+}
+
+#aboutTyping {
+	font-family: var(--font-code);
+	font-weight: 500;
+}

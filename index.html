@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta
+            name="description"
+            content="A developer-focused website showcasing personal projects, open-source work, experiments, and explorations in web development, programming, and modern technology."
+        />
+        <meta name="author" content="Mayank Tech" />
+        <meta name="color-scheme" content="dark light" />
+        <meta name="robots" content="index, follow" />
+        <meta
+            name="google-site-verification"
+            content="enQeMASAZ_tyEnmuoWHwY3wGmBwyb3WDctughrH4dQA"
+        />
+        <link rel="canonical" href="https://mtech-codes.github.io/" />
+        <meta name="theme-color" content="#060416" />
+        <link rel="preconnect" href="https://api.github.com" />
+        <link rel="dns-prefetch" href="https://api.github.com" />
+        <meta property="og:title" content="Mayank Tech" />
+        <meta
+            property="og:description"
+            content="Mayank Tech is where I build, break, experiment, and learn—sharing my projects, open-source work, coding experiments, and ideas as I explore the world of technology."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://mtech-codes.github.io/" />
+        <meta
+            property="og:image"
+            content="https://mtech-codes.github.io/assets/icons/logo-1024.png"
+        />
+        <meta property="og:site_name" content="Mayank Tech" />
+        <meta property="og:image:width" content="1024" />
+        <meta property="og:image:height" content="1024" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Mayank Tech" />
+        <meta name="twitter:description" content="O." />
+        <meta
+            name="twitter:image"
+            content="https://mtech-codes.github.io/assets/icons/logo-1024.png"
+        />
+        <link rel="icon" href="/favicon.ico" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/assets/icons/logo-32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="/assets/icons/logo-192.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/assets/icons/logo-256.png"
+        />
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Mayank Tech",
+                "url": "https://mtech-codes.github.io",
+                "sameAs": ["https://github.com/mtech-codes"]
+            }
+        </script>
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="stylesheet" href="assets/css/fonts.css" />
+        <title>Mayank Tech | Portfolio</title>
+    </head>
+    <body class="dark">
+        <div id="overlay" class="overlay"></div>
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-title">
+                <h2>Mayank</h2>
+                <h2>Tech</h2>
+            </div>
+            <button
+                class="close-btn"
+                id="close-btn"
+                type="button"
+                aria-label="Hamburger close"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    stroke="#ffffff"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="close-icon"
+                >
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <span class="eyebrow"> Pages </span>
+            <div class="divider"></div>
+            <div class="sidebar-btns">
+                <a onclick="home()">Home</a>
+                <a onclick="about()">About</a>
+                <a onclick="contact()">Contact</a>
+                <a onclick="repo()">Repositories</a>
+            </div>
+            <span class="eyebrow"> Theme </span>
+            <div class="divider"></div>
+            <button id="theme-btn" type="submit">Toggle Theme</button>
+        </div>
+        <header class="poppins">
+            <span class="header-title">
+                <h2>Mayank</h2>
+                <h2>Tech</h2>
+            </span>
+            <nav class="nav-bar">
+                <div class="nav-btns">
+                    <a class="home activ" onclick="home()">Home</a>
+                    <a class="about" onclick="about()">About</a>
+                    <a class="contact" onclick="contact()">Contact</a>
+                    <a class="repo" onclick="repo()">Repositories</a>
+                </div>
+                <button
+                    class="hamburger"
+                    id="hamburger"
+                    type="button"
+                    aria-label="Hamburger button"
+                    title="Hamburger button"
+                >
+                    <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M1 5L20 5"
+                            stroke="#141B34"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                        <path
+                            d="M1 12L20 12"
+                            stroke="#141B34"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                        <path
+                            d="M1 19L20 19"
+                            stroke="#141B34"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+                </button>
+                <button
+                    class="theme-toggle"
+                    id="themeToggle"
+                    type="button"
+                    aria-label="Switch theme"
+                    title="Switch theme"
+                >
+                    <svg
+                        class="moon-icon"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+                        <path
+                            d="M21 12.8A8.5 8.5 0 0 1 11.2 3a8.5 8.5 0 1 0 9.8 9.8Z"
+                        />
+                    </svg>
+                    <svg
+                        class="sun-icon"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                    >
+                        <circle cx="12" cy="12" r="4" />
+                        <path d="M12 2v2" />
+                        <path d="M12 20v2" />
+                        <path d="m4.93 4.93 1.41 1.41" />
+                        <path d="m17.66 17.66 1.41 1.41" />
+                        <path d="M2 12h2" />
+                        <path d="M20 12h2" />
+                        <path d="m6.34 17.66-1.41 1.41" />
+                        <path d="m19.07 4.93-1.41 1.41" />
+                    </svg>
+                </button>
+            </nav>
+        </header>
+        <main>
+            <section id="home-page">
+                <div class="home-hero">
+                    <div class="home-content">
+                        <div class="home-badge">
+                            <span class="home-badge-dot"></span>
+                            <span
+                                >Web Developer · Ethical Hacker · Creator</span
+                            >
+                        </div>
+                        <h1 class="home-title">
+                            Hi, I'm
+                            <span>Mayank</span>
+                        </h1>
+                        <p class="home-description">
+                            I build web experiences, experiment with technology,
+                            explore cybersecurity, and turn ideas into practical
+                            projects. Welcome to my personal developer space.
+                        </p>
+                        <div class="home-actions">
+                            <button
+                                type="button"
+                                class="home-btn home-btn-primary"
+                                onclick="repo()"
+                            >
+                                Explore My Work
+                            </button>
+                            <button
+                                type="button"
+                                class="home-btn home-btn-secondary"
+                                onclick="contact()"
+                            >
+                                Get In Touch
+                            </button>
+                        </div>
+                        <div class="home-socials">
+                            <a
+                                href="https://instagram.com/"
+                                class="home-social"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Instagram"
+                                title="Instagram"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="16"
+                                    fill="currentColor"
+                                    class="bi bi-instagram"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path
+                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                                    />
+                                </svg>
+                            </a>
+                            <a
+                                href="https://github.com/mtech-codes"
+                                class="home-social"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="GitHub"
+                                title="GitHub"
+                            >
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M12 .7a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.5-1.4-1.3-1.7-1.3-1.7-1.1-.8.1-.8.1-.8 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A12 12 0 0 0 12 .7Z"
+                                    />
+                                </svg>
+                            </a>
+                            <a
+                                href="https://youtube.com/@mtech-codes"
+                                class="home-social"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="YouTube"
+                                title="YouTube"
+                            >
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.3 3.6-6.3 3.6Z"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="home-visual">
+                        <div class="home-glow"></div>
+                        <div class="home-orbit">
+                            <span class="home-orbit-dot"></span>
+                        </div>
+                        <div class="home-logo-container">
+                            <img
+                                src="https://avatars.githubusercontent.com/u/204497572?v=4"
+                                alt="Mayank Tech Logo"
+                                class="home-logo"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="about-page" class="about-page">
+                <div class="about-container">
+                    <div class="about-profile">
+                        <div class="about-logo-wrap">
+                            <img
+                                src="https://avatars.githubusercontent.com/u/204497572?v=4"
+                                alt="Mayank Tech"
+                                class="about-logo"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="about-content">
+                        <span class="about-label">ABOUT ME</span>
+
+                        <h2>Hey, I'm <span>Mayank</span></h2>
+
+                        <div class="about-typing">
+                            <span>I am a </span>
+                            <span id="aboutTyping"></span>
+                            <span class="typing-cursor">|</span>
+                        </div>
+
+                        <p class="about-description">
+                            I'm a developer who enjoys building things,
+                            exploring technology, and turning ideas into real
+                            projects. I like learning by creating, experimenting
+                            with new concepts, solving problems, and
+                            understanding how things work behind the scenes.
+                            From web development to cybersecurity, I'm always
+                            curious to learn something new and improve along the
+                            way.
+                        </p>
+
+                        <div class="about-skills">
+                            <div class="about-section-title">
+                                <h3>Skills</h3>
+                            </div>
+
+                            <div class="skills-grid" id="skillsGrid"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contact-page" id="cont-page">
+                <div class="contact-container">
+                    <div class="contact-heading">
+                        <span class="contact-label">CONTACT</span>
+                        <h2>Get In Touch</h2>
+                        <p>Have something to say? Send me a message.</p>
+                    </div>
+
+                    <form class="contact-form">
+                        <input
+                            type="hidden"
+                            name="access_key"
+                            value="03b8f823-8ea0-44eb-82aa-496e8de325d5"
+                        />
+
+                        <input
+                            type="checkbox"
+                            name="botcheck"
+                            style="display: none"
+                        />
+
+                        <div class="contact-field">
+                            <label for="contact-name">Name</label>
+                            <input
+                                type="text"
+                                id="contact-name"
+                                name="name"
+                                placeholder="Your name"
+                                required
+                            />
+                        </div>
+
+                        <div class="contact-field">
+                            <label for="contact-email">Email</label>
+                            <input
+                                type="email"
+                                id="contact-email"
+                                name="email"
+                                placeholder="Your email"
+                                required
+                            />
+                        </div>
+
+                        <div class="contact-field">
+                            <label for="contact-message">Message</label>
+                            <textarea
+                                id="contact-message"
+                                name="message"
+                                placeholder="Write your message..."
+                                required
+                            ></textarea>
+                        </div>
+
+                        <button class="contact-send" type="submit">
+                            <span>Send Message</span>
+                            <svg
+                                fill="#ffffff"
+                                width="800px"
+                                height="800px"
+                                viewBox="0 0 512 512"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <title>ionicons-v5-q</title>
+                                <path
+                                    d="M16,464,496,256,16,48V208l320,48L16,304Z"
+                                />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </section>
+            <section id="repo-page">
+                <div class="repo-header">
+                    <div>
+                        <span class="repo-label">MY WORK</span>
+                        <h1>Repositories</h1>
+                        <p>
+                            Open-source projects, experiments and development
+                            work.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="repositoryGrid" class="repository-grid"></div>
+            </section>
+        </main>
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
